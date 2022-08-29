@@ -1,0 +1,99 @@
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Navbar */
+nav {
+    border-bottom:2px solid#b6baba55;
+    border-left:2px solid #b6baba55;
+    border-right:2px solid #b6baba55;
+    margin:20px 20px;
+   
+}
+.iconeport {
+    position:relative;
+    width:200px;
+    left:5rem;
+    bottom:135px;
+}
+nav ul {
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    list-style: none;
+    height:3rem;
+    padding:3rem 0;
+    
+}
+nav ul a {
+    text-decoration: none;
+    color:rgb(162, 159, 156);
+    margin:50px;
+    font-size: larger;
+}
+/* Efeito botão navbar */
+nav a {
+
+text-decoration: none;
+background-image: linear-gradient(#8decff, #27a1f3);
+background-size: 0% 0.1em;
+background-position-y: 100%;
+background-position-x: 100%;
+background-repeat: no-repeat;
+transition: background-size 0.3s ease-out;
+padding-bottom:40px;
+}
+nav a:hover, nav a:focus, nav a:active {
+background-size: 100% 0.2em;
+background-position-x: 0%;
+color:#58bbff;
+}
+/* Cabeçalho */
+header {
+    text-align: center;
+    color:#677481;
+    font-size: 22px;
+    padding-bottom: 2rem;
+    border-bottom:2px solid #b6babaaa
+}
+/* Section Projetos */
+.projetos {
+    display:flex;
+    justify-content: space-evenly;
+    margin:2rem 8rem;
+    height:600px
+}
+.projetos-img {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#f5f6f7;
+    width: 100%;
+    
+}
+.projetos-img img {
+    height: 250px;
+}
+
+.imgsocial {
+    position:relative;
+}
+/* Botões e textos Projetos  */
+
+.overlay {
+    position:absolute;
+    z-index:10;
+    left:10;
+    top:45rem;
+}
+.button-img01 {
+    padding:10px 20px;
+    border-radius: 5px;
+    
+}
