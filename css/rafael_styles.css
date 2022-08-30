@@ -66,15 +66,15 @@ header {
 .projetos {
     display:flex;
     justify-content: space-evenly;
-    margin:2rem 8rem;
-    height:600px
+    margin:8rem;
+    
+    
 }
 .projetos-img {
     display:flex;
+    position:relative;
     justify-content: center;
     align-items: center;
-    background-color:#f5f6f7;
-    width: 100%;
     
 }
 .projetos-img img {
@@ -83,17 +83,47 @@ header {
 
 .imgsocial {
     position:relative;
+    
 }
-/* Botões e textos Projetos  */
+/* Projetos Botões e Textos */
 
 .overlay {
+    display:block;
     position:absolute;
-    z-index:10;
-    left:10;
-    top:45rem;
+    left:10;    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    background-color: #6f8091;
+    text-align: center;
+    line-height: 70px;
+    color:#59bcfe;
 }
-.button-img01 {
+.overlay p {
+    color:#c2c8ce;
+}
+.button-img {
+    position: relative;
     padding:10px 20px;
     border-radius: 5px;
+    background:linear-gradient(90deg,#59bcfe, #00e1ff);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    border:none;
+    color:#fff;
+    cursor:pointer;
+    top:2rem;
+    transition: 1s ease;
+}
+.overlay:hover {
+    opacity: 1;
+}
+.button-img:hover {
+    background:linear-gradient(90deg,#00e1ff, #59bcfe);
     
 }
